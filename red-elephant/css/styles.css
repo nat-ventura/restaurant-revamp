@@ -39,7 +39,7 @@ html, body {
     flex-direction: column;
     background-image: url(../images/tapestry.jpg);
     background-position: center;
-    background-repeat: repeat-x;
+    background-size: cover;
     height: 100%;
 
     /* height is set to 100% so it would tile if
@@ -93,11 +93,12 @@ h1.title {
 
 .cover-photo {
     /* remember image urls are relative to css file <3 */
+    display: flex;
+    justify-content: center;
     background-image: url(../images/big-pad-thai.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    border-top: 10px solid #E8A900;
-    border-bottom: 10px solid #E8A900;
+    max-height: 80%;
+    border: 10px solid #E8A900;
 }
