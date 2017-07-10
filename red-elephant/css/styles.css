@@ -15,6 +15,11 @@ html {
     src: url(../fonts/CherrySwash-Bold.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: Coiny;
+    src: url(../fonts/Coiny-Regular.ttf) format("truetype");
+}
+
 /*@font-face {
     font-family: Chewy;
     src: url(../fonts/Chewy.ttf) format("truetype");
@@ -30,11 +35,13 @@ html, body {
 .tapestry {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-image: url(../images/tapestry.jpg);
     background-position: center;
-    background-size: cover;
-    height: 100%; 
+    background-repeat: repeat-x;
+    height: 100%;
+
     /* height is set to 100% so it would tile if
     background size wasn't set to cover*/
 }
@@ -48,37 +55,56 @@ html, body {
 }*/
 
 .main-container {
+    border: 10px solid cyan;
     display: block;
     max-width: 900px;
     /*width: 900px;*/
-    background: rgba(173,103,59,0.9);
     border-radius: 25px;
     padding: 1em;
     
 }
 
-h1.title {
+.description {
+    border: 10px solid green;
     display: block;
+    background: rgba(0,0,0,0.2);
+    color: #E8A900;
+    border-radius: 25px;
+    padding: 1.75em;
+    font-family: Coiny;
     text-align: center;
-    font-size: 80px;
+    margin: 0 4em;
+}
+
+h1.title {
+    display: flex;
+    border: 5px solid red;
+    padding: 0 1em; 
+    text-align: center;
+    font-size: 90px;
     font-family: CherrySwash, Verdana, Tahoma, sans-serif;
-    background: -webkit-linear-gradient(#FFCB55, #E89F39);
+    background: -webkit-linear-gradient(#F7FF15, #E8A900);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    float: left;
     /*border: 10px solid green;*/
     margin-bottom: 0;
     padding-bottom: 5px;
 
 }
 
-.main-container img {
+/*.jank {
+
+}*/
+
+.tapestry img {
     /* remember image urls are relative to css file <3 */
     /*background-image: url(../images/big-pad-thai-crop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;*/
     width: 35em;
+    border-top: 10px solid #E8A900;
+    border-bottom: 10px solid #E8A900;
     /*border: 10px solid green;*/
 
 }
