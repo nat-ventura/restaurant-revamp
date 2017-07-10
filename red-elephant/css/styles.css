@@ -1,0 +1,26 @@
+/* apply a natural box model to all elements,
+but allowing components to change */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.tapestry {
+    background-image: url(../images/tapestry.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.main-food-image {
+    /* remember image urls are relative to css file <3 */
+    background-image: url(../images/big-pad-thai.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    height: 400px;
+}
