@@ -9,18 +9,27 @@ html {
 }
 
 .tapestry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url(../images/tapestry.jpg);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
 }
 
+.main-container {
+    max-width: 400px;
+    margin: auto;
+    background-color: goldenrod;
+    border-radius: 25px;
+}
+
 .main-food-image {
     /* remember image urls are relative to css file <3 */
-    background-image: url(../images/big-pad-thai.jpg);
+    /*background-image: url(../images/big-pad-thai-crop.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 400px;
-    height: 400px;
+    background-size: cover;*/
+    width: 100%;
 }
