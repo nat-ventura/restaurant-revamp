@@ -1,0 +1,110 @@
+/* apply a natural box model to all elements,
+but allowing components to change */
+
+html {
+    box-sizing: border-box;
+   
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: CherrySwash;
+    src: url(../fonts/CherrySwash-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Coiny;
+    src: url(../fonts/Coiny-Regular.ttf) format("truetype");
+}
+
+/*@font-face {
+    font-family: Chewy;
+    src: url(../fonts/Chewy.ttf) format("truetype");
+}*/
+
+html, body {
+    height: 100%;
+    /* makes the html element and body element full height
+    of the browser window--- otherwise the elements will only
+    be big enough to show the actual content */
+}
+
+.tapestry, .cover-photo-1, .cover-photo-2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* height is set to 100% so it would tile if
+    background size wasn't set to cover*/
+}
+
+/*.layer{
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}*/
+
+.main-container {
+    border: 10px solid cyan;
+    display: block;
+    border-radius: 25px;
+    padding: 1em;
+    background: rgba(0,0,0,0.5);
+    /*color: #E8A900;*/
+    color: yellow;
+    padding: 1em;
+    font-family: serif;
+    margin: 20%;
+    
+}
+/*
+.description {
+    border: 10px solid cyan;
+
+}*/
+
+h1.title {
+    display: block;
+    padding: 0 1em; 
+    text-align: center;
+    font-size: 80px;
+    font-family: CherrySwash, Verdana, Tahoma, sans-serif;
+    /*color: yellow;*/
+    -webkit-text-stroke: 1px black;
+   /*color: #F40200;*/
+   color: gold;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    padding-bottom: 5px;
+
+}
+
+.cover-photo-1 {
+    /* remember image urls are relative to css file <3 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/big-pad-thai.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+
+}
+
+.cover-photo-2 {
+    /* remember image urls are relative to css file <3 */
+    display: flex;
+    background-image: url(../images/tapestry.jpg);
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
