@@ -110,7 +110,7 @@ h1.title {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .hours {
@@ -123,12 +123,12 @@ h1.title {
 }
 
  .address {
-    display: block;
+    text-align: center;
     border-radius: 25px;
-    padding: 1em;
     background: rgba(0,0,0,0.5);
     color: yellow;
     font-family: serif;
+    width: 30%;
 }
 
  .gallery {
@@ -140,6 +140,28 @@ h1.title {
     font-family: serif;
 } 
 
+.button {
+    display: block;
+    border-radius: 25px;
+    padding: 1em;
+    background: rgba(0,0,0,0.5);
+    color: yellow;
+    font-family: serif;
+}
+
+.side-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-address {
+    border: 10px solid red;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-flow: row wrap;
+}
 
 .cover-photo-2 {
     /* remember image urls are relative to css file <3 */
