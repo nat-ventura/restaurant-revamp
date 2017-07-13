@@ -39,14 +39,6 @@ html, body {
     background size wasn't set to cover*/
 }
 
-/*.layer{
-    background-color: rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}*/
-
 .welcome-container {
     /*border: 10px solid cyan;*/
     display: block;
@@ -109,8 +101,18 @@ h1.title {
     border: 10px solid cyan;
     width: 100%;
     display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.top-div {
+    border: 10px solid green;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .hours {
@@ -138,6 +140,7 @@ h1.title {
     background: rgba(0,0,0,0.5);
     color: yellow;
     font-family: serif;
+    float: right;
 } 
 
 .button {
