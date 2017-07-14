@@ -98,13 +98,13 @@ h1.title {
 }
 
 .main-container {
-    /* border: 10px solid cyan; */
+    border-top: 30px solid goldenrod;
     width: 100%;
     display: flex;
     align-items: center; 
     justify-content: space-around;
     flex-flow: row wrap;
-    margin: 0 2em;
+    padding: 0 0 4em 0;
 }
 
 .top-div {
@@ -114,14 +114,21 @@ h1.title {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    margin: 0 0 1em 0;
+    padding: 2em;
+    border-bottom: 50px solid maroon;
+}
+
+.lunch-hours {
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .hours {
     display: block;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     padding: 1em;
-    background: rgba(0,0,0,0.5);
-    color: yellow;
+    background: goldenrod;
     font-family: serif;
 }
 
@@ -181,14 +188,19 @@ h1.title {
 .big-menu {
     display: flex;
     background-color: rgba(218, 165, 32, .9);
-    border-radius: 50px;
+    border-radius: 50px; 
     flex-flow: column wrap;
-    width: 80%;
+    width: 85%;
     justify-content: center;
     align-items: center;
     padding: 2em;
 
 }
+
+/* .appetizer, .soup, .salad,
+.curry, .noodles, .stirfry,
+.faves, .desserts, .drinks {
+} */
 
 .soup-protein, .curry-proteins,
 .noodle-protein, .stirfry-protein {
