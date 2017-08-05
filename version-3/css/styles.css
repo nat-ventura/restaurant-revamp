@@ -1,0 +1,210 @@
+/* apply a natural box model to all elements,
+but allowing components to change */
+
+html {
+    box-sizing: border-box;
+   
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: CherrySwash;
+    src: url(../fonts/CherrySwash-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Coiny;
+    src: url(../fonts/Coiny-Regular.ttf) format("truetype");
+}
+
+/*@font-face {
+    font-family: Chewy;
+    src: url(../fonts/Chewy.ttf) format("truetype");
+}*/
+
+html, body {
+    height: 100%;
+    /* makes the html element and body element full height
+    of the browser window--- otherwise the elements will only
+    be big enough to show the actual content */
+}
+
+.tapestry, .cover-photo-1 {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    /* height is set to 100% so it would tile if
+    background size wasn't set to cover*/
+}
+
+.welcome-container {
+    /*border: 10px solid cyan;*/
+    display: block;
+    border-radius: 25px;
+    padding: 1em;
+    background: rgba(0,0,0,0.5);
+    /*color: #E8A900;*/
+    color: yellow;
+    font-family: serif;
+    
+}
+/*
+.description {
+    border: 10px solid cyan;
+
+}*/
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
+h1.title {
+    display: block;
+    padding: 0 1em; 
+    text-align: center;
+    font-size: 80px;
+    font-family: CherrySwash, Verdana, Tahoma, sans-serif;
+    /*color: yellow;*/
+    -webkit-text-stroke: 1px black;
+   /*color: #F40200;*/
+   color: gold;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    padding-bottom: 5px;
+
+}
+
+.cover-photo-1 {
+    /* remember image urls are relative to css file <3 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/big-pad-thai.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+
+}
+
+.main-container {
+    border-top: 30px solid goldenrod;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 0 0 4em 0;
+}
+
+.top-div {
+    /* border: 10px solid green; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 0 1em 0;
+    padding: 2em;
+    border-bottom: 50px solid maroon;
+}
+
+.lunch-hours {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.hours {
+    display: block;
+    /* border-radius: 25px; */
+    padding: 1em;
+    background: goldenrod;
+    font-family: serif;
+}
+
+ .address {
+    text-align: center;
+    border-radius: 25px;
+    background: rgba(0,0,0,0.5);
+    color: yellow;
+    font-family: serif;
+    width: 30%;
+}
+
+ .gallery {
+    display: block;
+    border-radius: 25px;
+    padding: 1em;
+    background: rgba(0,0,0,0.5);
+    color: yellow;
+    font-family: serif;
+    float: right;
+} 
+
+.button {
+    display: block;
+    border-radius: 25px;
+    padding: 1em;
+    background: rgba(0,0,0,0.5);
+    color: yellow;
+    font-family: serif;
+}
+
+.side-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-address {
+    /* border: 10px solid red; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-flow: row wrap;
+}
+
+.cover-photo-2 {
+    /* remember image urls are relative to css file <3 */
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/tapestry.jpg);
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    background-size: 100%;
+}
+
+.big-menu {
+    display: flex;
+    background-color: rgba(218, 165, 32, .9);
+    border-radius: 50px; 
+    flex-flow: column wrap;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+
+}
+
+/* .appetizer, .soup, .salad,
+.curry, .noodles, .stirfry,
+.faves, .desserts, .drinks {
+} */
+
+.soup-protein, .curry-proteins,
+.noodle-protein, .stirfry-protein {
+    display: flex;
+    flex: column;
+    justify-content: center;
+}
