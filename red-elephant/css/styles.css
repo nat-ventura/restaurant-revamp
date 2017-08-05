@@ -3,7 +3,7 @@ but allowing components to change */
 
 html {
     box-sizing: border-box;
-   
+
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -61,8 +61,9 @@ html, body {
     /*width: 900px;*/
     /*border-radius: 25px;
     padding: 1em;*/*/
-    
+
 }
+/* ^^ Tiny typo - there seems to be a `}` that didn't get commented out.  */
 
 .description {
     border: 10px solid cyan;
@@ -77,9 +78,11 @@ html, body {
     margin: 0 4em;
 }
 
+/* It's probably ok to drop the `h1` portion of this selector and
+just make it `.title`  */
 h1.title {
     display: block;
-    padding: 0 1em; 
+    padding: 0 1em;
     text-align: center;
     font-size: 70px;
     font-family: CherrySwash, Verdana, Tahoma, sans-serif;
@@ -89,7 +92,7 @@ h1.title {
    color: gold;
    text-shadow:
        3px 3px 0 #000,
-     -1px -1px 0 #000,  
+     -1px -1px 0 #000,
       1px -1px 0 #000,
       -1px 1px 0 #000,
        1px 1px 0 #000;
